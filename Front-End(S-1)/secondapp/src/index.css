@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;  
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.header{
+  height: 87px;
+  font-size: 20px;
+  background-color: rgb(241, 45, 10); 
+}
+.c_name{
+  height: 90px;
+  /* background-color: aqua; */
+}
+.cl_name{
+  text-align: center;
+  font-family: fantasy;
+  /* padding: 50px; */
+  font-size: 50px;
+  /* margin-top: -80px; */
+  
+}
+.bncet_logo{
+  background-color: aqua;
+  text-align: center;
+}
+.cl_img{
+  display: block;
+  /* max-width: 100%; */
+  box-sizing: content-box;
+  justify-content: center;
+  text-align: center;
+  /* background-color: antiquewhite; */
+}
+.top-header{
+  height: 50px;
+  width: 100%;
+  background-color: aqua;
+  /* border: 2px solid red; */
+  display: inline    ;
+}
+.div2{
+  height: 480px;
+  width: 100%;
+  /* background-color: antiquewhite; */
+}
+.b1{
+  height: 40px;
+  width: 80px; 
+
+}
+.b2{
+  height: 40px;
+  width: 80px; 
+
+}
+.b3{
+  height: 40px;
+  width: 80px; 
+}
+.home{
+  color: #fff;
+  /* background-color: aqua; */
+}
+.link{
+  color: #fff;
+}
+.drop{
+  color: black;
+  border: 0px;
+}
+.topdiv{
+  height: 5vh;
+  width: 100%;
+}
+/* .c1{
+  height: 20vh;
+} */
+.crousel_img{
+  height: 480px;
+  width: 100%;
+}
+.column1{
+  font-weight: bolder;
+}
+.c1{
+  background-color: rgb(255, 255, 255);
+}
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+  .student_user{
+    justify-content: center;
+  }
+  .login-container2{
+    
+    /* background-image: url(https://cdn.wallpapersafari.com/19/98/zHW9SK.jpg); */
+    height: 100%;
+    width: 100%;
+  }
+
+.stu{
+  background-color: rgb(212, 131, 25),
+}
+.sign{
+  /* background-color: rgb(162, 201, 201); */
+  background-image: linear-gradient(rgb(214, 221, 72),rgb(86, 191, 233));
+}
+.text{
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+.assign_new{
+  height: 600px;
+  width: 70%;
+  background-color: rgb(165, 195, 221);
+  margin-left: 10%;
+  border: 1px solid black;
+}
+.upper_head{
+  height: 70px;
+  width: auto;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+.submitass{
+  text-align: center;
+  margin-top: 1%;
+}
+
+
