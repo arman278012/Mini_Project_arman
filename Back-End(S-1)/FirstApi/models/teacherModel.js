@@ -1,11 +1,11 @@
 const mongoose = require("../connection")
 
 const mySchema = new mongoose.Schema({
-    name:string,
-    username:string,
-    password:string,
-    branch:string,
-    subject:string,
+    name:String,
+    username:String,
+    password:String,
+    branch:String,
+    subject:String,
     AssignedAt:{type:Date, default:new Date()}
 
 })

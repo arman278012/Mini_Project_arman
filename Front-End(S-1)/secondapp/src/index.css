@@ -43,14 +43,13 @@ code {
   height: 50px;
   width: 100%;
   background-color: aqua;
-  /* border: 2px solid red; */
-  display: inline    ;
+  display: inline ;
 }
-.div2{
+/* .div2{
   height: 480px;
   width: 100%;
   /* background-color: antiquewhite; */
-}
+
 .b1{
   height: 40px;
   width: 80px; 
@@ -84,7 +83,7 @@ code {
   height: 20vh;
 } */
 .crousel_img{
-  height: 480px;
+  height: 649px;
   width: 100%;
 }
 .column1{
@@ -138,5 +137,56 @@ code {
   text-align: center;
   margin-top: 1%;
 }
+.up{
+  height: 100px;
+  /* width: 300px;background-color: blueviolet; */  
+}
+.up1{
+  height: 100px;
+  width: 100px;
+  background-color: black;
+}
+/* .call{
+  text-align: center;
+  margin-top: 1%;
+  margin-left: 15%;
+  color: rgb(59, 59, 228); 
+} */
 
+.call2{
+  text-align: center;
+  margin-top: 10%;
+  color:rgb(59, 59, 228);
+  font-weight: bolder;
 
+}
+.call3{
+  /* text-align: center; */
+  margin-top: 1%;
+  color:rgb(59, 59, 228);
+  font-weight: bolder;
+
+}
+.myemail{
+  text-align: center;
+  margin-top: 10%;
+  color:rgb(59, 59, 228);
+  font-weight: bolder;
+}
+/* .up3{
+  border: 1px dotted blue;
+}
+
+.up2{
+  border: 1px dotted blue;
+} */
+.best{
+  text-align: center;
+  margin-top: 2%;
+  color: rgb(59, 59, 228);
+}
+.footer{
+  height: 500px;
+  width: 100%;
+  background-color: blueviolet;
+}

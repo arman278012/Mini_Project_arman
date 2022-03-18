@@ -1,20 +1,23 @@
-const Photo=()=>{
-    return(
-        <div className="container div2 mt-3">
+import { Grid } from "@mui/material"
 
+const Photo = () => {
+  return (
+    <div>
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://images.static-collegedunia.com/public/college_data/images/appImage/12945_BNCE.jpg?tr=c-force" className="d-block w-100 crousel_img" alt="..."/>
-    </div>
-  </div>
-</div>
+      {/* <div className="container-fluid div2 mt-3">
+        <div className="row">
+          <div className="col-md-12"> */}
+            <Grid container>
+              <Grid item md={12}>
+              <img className="img-fluid" src="https://bncet.ac.in/wp-content/uploads/2022/02/Untitled-design-4.jpg"  alt="..." />
+                 
+              </Grid>
+              </Grid>
+                {/* </div>
+              </div>
+            </div> */}
 
-
-
-
-            {/* <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        {/* <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="https://imperialsociety.in/wp-content/uploads/2018/07/ISIE-BNCET.jpg" className="d-block w-100 crousel_img" alt="..."/>
@@ -35,8 +38,24 @@ const Photo=()=>{
     <span class="visually-hidden">Next</span>
   </button>
 </div> */}
-   </div>
 
-    )
+
+<div className="container footer mt-3">
+        <div className="row">
+          <div className="col-md-4">
+          </div>
+
+          <div className="col-md-4">
+          </div>
+
+          <div className="col-md-4">
+          </div>
+
+          </div>
+
+      </div>
+      </div>
+
+  )
 }
 export default Photo

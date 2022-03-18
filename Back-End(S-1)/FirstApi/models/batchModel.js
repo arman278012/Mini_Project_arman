@@ -1,8 +1,8 @@
 const mongoose = require("../connection")
 
 const mySchema = new mongoose.Schema({
-    title:string,
-    code:string,
+    title:String,
+    code:String,
     students:Array,
     trainer:{type: mongoose.Types.ObjectId, ref: 'teachers'},
     AssignedAt:{type:Date, default:new Date()}
