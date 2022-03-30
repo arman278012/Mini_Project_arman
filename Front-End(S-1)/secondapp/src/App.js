@@ -11,6 +11,7 @@ import BatchDashboard from './Components/batchDashboard';
 import AddNew from './Components/AddNewAssignment';
 import AboutUs from './Components/aboutus';
 import ListBatches from './Components/listBatches';
+import Accord from './Components/accordion';
 function App() {
   return (
     <div>
@@ -28,6 +29,7 @@ function App() {
         <Route element={<AddNew></AddNew>} path="/addnew"></Route>
         <Route element={<AboutUs></AboutUs>} path="/about"></Route>
         <Route element={<ListBatches></ListBatches>} path="/listbatch"></Route>
+        <Route element={<Accord></Accord>} path="/accord"></Route>
       </Routes> 
         </BrowserRouter>
       

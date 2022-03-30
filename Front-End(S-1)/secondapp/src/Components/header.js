@@ -7,8 +7,6 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
-
-
 const Home = () => {
   return (
     <div>
@@ -75,11 +73,19 @@ const Home = () => {
                 <li className="nav-item">
                   <NavLink className="nav-link active" aria-current="page" to="/listbatch">Show batches</NavLink>
                 </li>
+
+                <li className="nav-item">
+                  <NavLink className="nav-link active" aria-current="page" to="/accord">Accord</NavLink>
+                </li>
+
+
               </ul>
             </div>
           </div>
         </nav>
       </Grid>
+
+
 
     </div>  
   )}

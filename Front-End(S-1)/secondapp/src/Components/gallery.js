@@ -13,7 +13,7 @@ const Gallery = () =>{
     const url9="https://www.thundafunda.com/wp-content/uploads/2020/12/c-10.jpg"
     const [mainimg, setMainimg] = useState(url1)
 
-    const changeImage = (imgurl) => {
+    const changeImage = (imgurl) => { 
          setMainimg(imgurl)
     }
     return(

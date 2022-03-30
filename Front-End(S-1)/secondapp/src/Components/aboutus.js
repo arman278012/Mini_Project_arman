@@ -23,7 +23,7 @@ const AboutUs = () => {
                                 <li><a class="dropdown-item" href="#">Prakash</a></li>
                                 <li><a class="dropdown-item" href="#">Sujeet</a></li>
                                 <li><a class="dropdown-item" href="#">mithu sir</a></li>
-                                <li><a class="dropdown-item" href="#">laxmi</a></li>
+                                <li><a class="dropdown-item" href="#">Anshu</a></li>
                                 <li><a class="dropdown-item" href="#">Rajkumar</a></li>
                             </ul>
                         </div>
