@@ -22,4 +22,4 @@ router.get("/home",(req,res)=> {
     res.send("respnse from user router at home")
 })
 
-module.exports=router
+module.exports=router;

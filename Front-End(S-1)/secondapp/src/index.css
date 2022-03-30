@@ -45,11 +45,6 @@ code {
   background-color: aqua;
   display: inline ;
 }
-/* .div2{
-  height: 480px;
-  width: 100%;
-  /* background-color: antiquewhite; */
-
 .b1{
   height: 40px;
   width: 80px; 
@@ -58,6 +53,9 @@ code {
 .b2{
   height: 40px;
   width: 80px; 
+}
+.background{
+  background-color: blue;
 
 }
 .b3{
@@ -98,28 +96,33 @@ code {
     margin-right: auto;
     width: 25%;
   }
-  .student_user{
-    justify-content: center;
+   .teacher_pass{
+    text-align: center;
+    margin-left: 4rem;
   }
-  .login-container2{
-    
-    /* background-image: url(https://cdn.wallpapersafari.com/19/98/zHW9SK.jpg); */
-    height: 100%;
-    width: 100%;
+  .teacher_username{
+    text-align: center;
   }
-
-.stu{
-  background-color: rgb(212, 131, 25),
-}
+ .stu{
+   background-image: linear-gradient(rgb(191, 218, 166),rgb(199, 143, 141),rgb(53, 53, 83));
+   height: 500px;
+   width: auto;
+ }
+ .login_btn{
+   justify-content: center;
+ }
 .sign{
   /* background-color: rgb(162, 201, 201); */
   background-image: linear-gradient(rgb(214, 221, 72),rgb(86, 191, 233));
+  opacity: 100%;
 }
+
 .text{
   font-weight: bold;
   font-size: large;
   text-align: center;
 }
+
 .assign_new{
   height: 600px;
   width: 70%;
@@ -127,20 +130,24 @@ code {
   margin-left: 10%;
   border: 1px solid black;
 }
+
 .upper_head{
   height: 70px;
   width: auto;
   background-color: aliceblue;
   border: 1px solid black;
 }
+
 .submitass{
   text-align: center;
   margin-top: 1%;
 }
+
 .up{
   height: 100px;
   /* width: 300px;background-color: blueviolet; */  
 }
+
 .up1{
   height: 100px;
   width: 100px;
@@ -158,35 +165,154 @@ code {
   margin-top: 10%;
   color:rgb(59, 59, 228);
   font-weight: bolder;
-
 }
+
 .call3{
   /* text-align: center; */
   margin-top: 1%;
   color:rgb(59, 59, 228);
   font-weight: bolder;
-
 }
+
 .myemail{
   text-align: center;
-  margin-top: 10%;
   color:rgb(59, 59, 228);
   font-weight: bolder;
 }
-/* .up3{
-  border: 1px dotted blue;
-}
 
-.up2{
-  border: 1px dotted blue;
-} */
 .best{
   text-align: center;
   margin-top: 2%;
   color: rgb(59, 59, 228);
 }
+
 .footer{
   height: 500px;
   width: 100%;
-  background-color: blueviolet;
+ border-bottom-left-radius: 1px rgb(233, 13, 13);
+}
+
+.myclgtext{
+  text-align: center;
+}
+
+.bncetpara{
+  text-decoration: dotted;
+  font-size: normal;
+  font-weight: initial;
+}
+
+.g1{
+  background-color: rgb(57, 67, 212);
+  height: 500px;
+}
+
+.g2{
+  background-color: rgb(57, 67, 212);
+
+}
+
+.g3{
+  background-color: rgb(57, 67, 212);
+  height: 500px;
+}
+
+.g4{
+  background-color: rgb(57, 67, 212);
+  height: 500px;
+}
+
+.g5{
+    background-color: rgb(57, 67, 212);
+    height: 500px;
+}
+
+.cimg{
+  height: 50px;
+  width: 200px;
+  justify-content: center;
+  margin-left: 7.5rem;
+
+}
+
+.precampus{
+  text-align: center;
+  color: #fff;
+}
+.campus{
+  text-align: center;
+  color: #fff;
+}
+.downlaod{
+  text-align: center;
+  color: #fff;
+}
+.login-container2{
+  background-image: url(https://images.pexels.com/photos/330771/pexels-photo-330771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+ }
+ .forgot_passowrd{
+   margin-left: 60px;
+ }
+ .img11{
+   text-align: center;
+ }
+ .social{
+   height: 50px;
+   width: 50px;
+   /* margin-left: 7%; */
+   display: inline-block;
+   /* text-align: center; */
+   /* padding: 7px; */
+   text-align: end;
+   justify-content: baseline;
+ }
+ .youtube{
+   color:#fff;
+   cursor:pointer;
+   /* box-shadow: 0px 0px 5px 5px;  */
+ }
+ .youtube:hover{
+   /* background-color: rgb(136, 130, 128); */
+   width: 50px;
+   height: 50px;
+ }
+ .fb{
+   color:#fff;
+   cursor:pointer;
+   /* box-shadow: 0px 0px 5px 5px; */
+ }
+ .fb:hover{
+   width: 50px;
+   height: 50px;
+ }
+ .insta{
+   color:#fff;
+   cursor:pointer;
+   /* box-shadow: 0px 0px 5px 5px; */
+ }
+ .insta:hover{
+  width: 50px;
+  height: 50px;
+}
+ .twitter{
+   color:#fff;
+   cursor:pointer;
+   /* box-shadow: 0px 0px 5px 5px; */
+ }
+
+ .twitter:hover{
+  width: 50px;
+  height: 50px;
+}
+
+.background{
+  background-image: url("https://chitrahandicraft.com/wp-content/uploads/2019/02/login-page-background-7.jpg");
+  background-size: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.mainimg{
+  margin-left: 25%;
 }

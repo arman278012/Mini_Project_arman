@@ -1,4 +1,8 @@
-import { Grid } from "@mui/material"
+import { Grid } from "@mui/material";
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const Photo = () => {
   return (
@@ -7,54 +11,83 @@ const Photo = () => {
       {/* <div className="container-fluid div2 mt-3">
         <div className="row">
           <div className="col-md-12"> */}
-            <Grid container>
-              <Grid item md={12}>
-              <img className="img-fluid" src="https://bncet.ac.in/wp-content/uploads/2022/02/Untitled-design-4.jpg"  alt="..." />
-                 
-              </Grid>
-              </Grid>
-                {/* </div>
-              </div>
-            </div> */}
+      <Grid container>
+        <Grid item md={12}>
+          <img className="img-fluid" src="https://bncet.ac.in/wp-content/uploads/2022/02/Untitled-design-4.jpg" alt="..." />
 
-        {/* <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://imperialsociety.in/wp-content/uploads/2018/07/ISIE-BNCET.jpg" className="d-block w-100 crousel_img" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="https://images.static-collegedunia.com/public/college_data/images/appImage/12945_BNCE.jpg?tr=c-force" className="d-block w-100 crousel_img" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="https://img.collegedekhocdn.com/media/img/news/10435940_525007947605103_716899236523028769_n.jpg?tr=h-315,w-600" className="d-block w-100 crousel_img" alt="..."/>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> */}
+        </Grid>
+      </Grid>
+
+      <div className="container-fluid foot">
+        <Grid container>
+
+          <Grid className="g1 mt-5" item md={2}>
+            <h3 className="precampus mt-5">Campusssssss</h3>
+            <p className="campus mt-3">Contact Us</p>
+            <p className="campus">About BNCET</p>
+            <p className="campus">Acedemics</p>
+            <p className="campus">PLacement</p>
+            <p className="campus">Carrier</p>
+            <p className="campus">fAQs</p>
+          </Grid>
+
+          <Grid className="g2 mt-5" item md={2}>
+            <h3 className="downlaod mt-5">Downloadable</h3>
+            <p className="downlaod mt-3">Anti-Ragging Undertaking</p>
+            <p className="downlaod">AICTE regulations</p>
+            <p className="downlaod">Intership letter</p>
+            <p className="downlaod">Faculity Leave form</p>
+            <p className="downlaod">Staff Leave Form</p>
+            <p className="downlaod">Registration-form</p>
+          </Grid>
 
 
-<div className="container footer mt-3">
-        <div className="row">
-          <div className="col-md-4">
-          </div>
 
-          <div className="col-md-4">
-          </div>
+          <Grid className="g4 mt-5" item md={4}>
 
-          <div className="col-md-4">
-          </div>
+            <img className="cimg mt-5" src="https://bncet.ac.in/wp-content/uploads/2022/01/logo2.png" />
+            <span><br/>
 
-          </div>
+            <div className="social mt-5">
+              <YouTubeIcon className="youtube" />
+            </div>
+            <div className="social mt-3">
+              <InstagramIcon className="insta" />
+            </div>
+            <div className="social mt-3">
+              <FacebookIcon className="fb" />
+            </div>
+            <div className="social mt-3">
+              <TwitterIcon className="twitter" />
+            </div>
 
+          </span>
+
+          </Grid>
+
+          <Grid className="g5 mt-5" item md={2}>
+            <h3 className="downlaod mt-5">Students</h3>
+            <p className="downlaod mt-3">Course Eligibility</p>
+            <p className="downlaod">Fee structure</p>
+            <p className="downlaod">College Scholarship</p>
+            <p className="downlaod">Government Scholarship</p>
+            <p className="downlaod">Addmission form</p>
+            <p className="downlaod">Brochure</p>
+          </Grid>
+          <Grid className="g5 mt-5" item md={2}>
+            <h3 className="downlaod mt-5">Students</h3>
+            <p className="downlaod mt-3">Course Eligibility</p>
+            <p className="downlaod">Fee structure</p>
+            <p className="downlaod">College Scholarship</p>
+            <p className="downlaod">Government Scholarship</p>
+            <p className="downlaod">Addmission form</p>
+            <p className="downlaod">Brochure</p>
+          </Grid>
+        </Grid>
       </div>
-      </div>
+
+
+    </div>
 
   )
 }

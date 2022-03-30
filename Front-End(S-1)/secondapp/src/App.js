@@ -9,6 +9,8 @@ import TeacherLogin from './Components/teacherslogin';
 import TeacherSignup from './Components/techerSignup';
 import BatchDashboard from './Components/batchDashboard';
 import AddNew from './Components/AddNewAssignment';
+import AboutUs from './Components/aboutus';
+import ListBatches from './Components/listBatches';
 function App() {
   return (
     <div>
@@ -24,6 +26,8 @@ function App() {
         <Route element={<TeacherSignup></TeacherSignup>} path="/teachersignup"></Route>
         <Route element={<BatchDashboard></BatchDashboard>} path="/batchdashboard"></Route>
         <Route element={<AddNew></AddNew>} path="/addnew"></Route>
+        <Route element={<AboutUs></AboutUs>} path="/about"></Route>
+        <Route element={<ListBatches></ListBatches>} path="/listbatch"></Route>
       </Routes> 
         </BrowserRouter>
       

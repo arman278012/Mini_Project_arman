@@ -6,7 +6,7 @@ const mySchema = new mongoose.Schema({
     students:Array,
     trainer:{type: mongoose.Types.ObjectId, ref: 'teachers'},
     AssignedAt:{type:Date, default:new Date()}
-
 })
+
 const myModel = mongoose.model(mySchema,"batches");
 module.exports=myModel;

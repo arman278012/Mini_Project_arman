@@ -9,5 +9,5 @@ const mySchema = new mongoose.Schema({
     AssignedAt:{type:Date, default:new Date()}
 
 })
-const myModel = mongoose.model(mySchema,"teachers")
+const myModel = mongoose.model("teachers", mySchema)
 module.exports=myModel;
