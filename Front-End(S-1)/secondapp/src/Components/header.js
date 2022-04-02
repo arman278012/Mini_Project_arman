@@ -71,7 +71,7 @@ const Home = () => {
                 </li>
 
                 <li className="nav-item">
-                  <NavLink className="nav-link active" aria-current="page" to="/listbatch">Show batches</NavLink>
+                  <NavLink className="nav-link active" aria-current="page" to="/listbatch">Show Assignments</NavLink>
                 </li>
 
                 <li className="nav-item">

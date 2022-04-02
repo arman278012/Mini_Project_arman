@@ -1,7 +1,7 @@
 import { Button, Card, CardContent, Grid, Paper, TextField } from "@mui/material"
 import { Formik } from "formik";
 import Swal from "sweetalert2";
-import app_config from "../config";
+import app_config from "./config";
 
 
 const TeacherSignup = () => {
@@ -9,24 +9,24 @@ const TeacherSignup = () => {
     const url = app_config.api_url;
 
     // 1. Create a form object
-    const TeacherForm = {
+    const teacherForm = {
         name: "",
         username: "",
-        password: "",
+        subject:"",
         branch: "",
-        subject: "",
+        password: "",
     };
 
     // 2. Create a submit callback function
 
-    const TeacherSubmit = (values) => {
+    const teacherSubmit = (values) => {
         console.log(values);
         // 1. URL
         // 2. request method
         // 3. Data
         // 4. Data format
 
-        fetch(url + "/user/add", {
+        fetch(url + "/teacher/add", {
             method: "POST",
             body: JSON.stringify(values),
             headers: { "Content-Type": "application/json" },
@@ -34,11 +34,12 @@ const TeacherSignup = () => {
             .then((res) => {
                 console.log(res.status);
                 if (res.status === 200) {
-                    Swal.fire({
-                        icon: "success",
-                        title: "Success",
-                        text: "Registered Successfully",
-                    });
+                    // Swal.fire({
+                    //     icon: "success",
+                    //     title: "Success",
+                    //     text: "Registered Successfully",
+                    // });
+
                 }
                 return res.json();
             })
@@ -46,12 +47,6 @@ const TeacherSignup = () => {
                 console.log(data);
             });
     };
-
-
-
-
-
-
 
     return (
         <div className="mt-3 teacher_signup">
@@ -62,7 +57,7 @@ const TeacherSignup = () => {
                             <CardContent className="sign">
                                 <h2 className="text">Sign-up Here</h2>
 
-                                <Formik initialValues={TeacherForm} onSubmit={TeacherSubmit}>
+                                <Formik initialValues={teacherForm} onSubmit={teacherSubmit}>
                                     {({ values, handleChange, handleSubmit }) => (
                                             <form onSubmit={handleSubmit}>
 
@@ -92,16 +87,16 @@ const TeacherSignup = () => {
                                                     label="Subject's name"
                                                     type="string"
                                                     variant="outlined"
-                                                    id="password"
+                                                    id="subject"
                                                     onChange={handleChange}
-                                                    value={values.password}
+                                                    value={values.subject}
                                                 />
 
                                                 <TextField
                                                     className="w-100 mt-3"
                                                     placeholder="Branch"
                                                     label="Branch"
-                                                    type=""
+                                                    type="string"
                                                     variant="outlined"
                                                     //   helperText="Enter strong password"
                                                     id="branch"
@@ -115,9 +110,9 @@ const TeacherSignup = () => {
                                                     label="Password"
                                                     type="password"
                                                     variant="outlined"
-                                                    id="subject"
+                                                    id="password"
                                                     onChange={handleChange}
-                                                    value={values.subject} />
+                                                    value={values.password} />
 
                                                 <Button color="error"
                                                     variant="contained"

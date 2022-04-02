@@ -3,9 +3,11 @@ const mongoose = require("../connection")
 const mySchema = new mongoose.Schema({
     name:String,
     username:String,
-    password:String,
-    branch:String,
     subject:String,
+    branch:String,
+    password:String,
+    
+    
     AssignedAt:{type:Date, default:new Date()}
 
 })

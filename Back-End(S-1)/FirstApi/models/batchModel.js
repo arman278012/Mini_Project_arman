@@ -8,5 +8,5 @@ const mySchema = new mongoose.Schema({
     AssignedAt:{type:Date, default:new Date()}
 })
 
-const myModel = mongoose.model(mySchema,"batches");
+const myModel = mongoose.model("batches",mySchema);
 module.exports=myModel;
