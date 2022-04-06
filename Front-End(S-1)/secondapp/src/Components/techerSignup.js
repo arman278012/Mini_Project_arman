@@ -12,7 +12,7 @@ const TeacherSignup = () => {
     const teacherForm = {
         name: "",
         username: "",
-        subject:"",
+        subject: "",
         branch: "",
         password: "",
     };
@@ -25,7 +25,10 @@ const TeacherSignup = () => {
         // 2. request method
         // 3. Data
         // 4. Data format
+        
 
+
+        // fetch function is used to request in frontend from backend.
         fetch(url + "/teacher/add", {
             method: "POST",
             body: JSON.stringify(values),
@@ -34,11 +37,11 @@ const TeacherSignup = () => {
             .then((res) => {
                 console.log(res.status);
                 if (res.status === 200) {
-                    // Swal.fire({
-                    //     icon: "success",
-                    //     title: "Success",
-                    //     text: "Registered Successfully",
-                    // });
+                    Swal.fire({
+                        icon: "success",
+                        title: "Success",
+                        text: "Registered Successfully",
+                    });
 
                 }
                 return res.json();
@@ -59,74 +62,74 @@ const TeacherSignup = () => {
 
                                 <Formik initialValues={teacherForm} onSubmit={teacherSubmit}>
                                     {({ values, handleChange, handleSubmit }) => (
-                                            <form onSubmit={handleSubmit}>
+                                        <form onSubmit={handleSubmit}>
 
-                                                <TextField className="w-100 mt-3 name"
-                                                    placeholder="Name"
-                                                    label="name"
-                                                    variant="outlined"
-                                                    id="name"
-                                                    onChange={handleChange}
-                                                    value={values.name}
-                                                />
+                                            <TextField className="w-100 mt-3 name"
+                                                placeholder="Name"
+                                                label="name"
+                                                variant="outlined"
+                                                id="name"
+                                                onChange={handleChange}
+                                                value={values.name}
+                                            />
 
-                                                <TextField
-                                                    className="w-100 mt-3"
-                                                    placeholder="Username"
-                                                    label="Username"
-                                                    type="string"
-                                                    variant="outlined"
-                                                    id="username"
-                                                    onChange={handleChange}
-                                                    value={values.username}
-                                                />
+                                            <TextField
+                                                className="w-100 mt-3"
+                                                placeholder="Username"
+                                                label="Username"
+                                                type="string"
+                                                variant="outlined"
+                                                id="username"
+                                                onChange={handleChange}
+                                                value={values.username}
+                                            />
 
-                                                <TextField
-                                                    className="w-100 mt-3"
-                                                    placeholder="Subject"
-                                                    label="Subject's name"
-                                                    type="string"
-                                                    variant="outlined"
-                                                    id="subject"
-                                                    onChange={handleChange}
-                                                    value={values.subject}
-                                                />
+                                            <TextField
+                                                className="w-100 mt-3"
+                                                placeholder="Subject"
+                                                label="Subject's name"
+                                                type="string"
+                                                variant="outlined"
+                                                id="subject"
+                                                onChange={handleChange}
+                                                value={values.subject}
+                                            />
 
-                                                <TextField
-                                                    className="w-100 mt-3"
-                                                    placeholder="Branch"
-                                                    label="Branch"
-                                                    type="string"
-                                                    variant="outlined"
-                                                    //   helperText="Enter strong password"
-                                                    id="branch"
-                                                    onChange={handleChange}
-                                                    value={values.branch}
-                                                />
+                                            <TextField
+                                                className="w-100 mt-3"
+                                                placeholder="Branch"
+                                                label="Branch"
+                                                type="string"
+                                                variant="outlined"
+                                                //   helperText="Enter strong password"
+                                                id="branch"
+                                                onChange={handleChange}
+                                                value={values.branch}
+                                            />
 
-                                                <TextField
-                                                    className="w-100 mt-3"
-                                                    placeholder="password"
-                                                    label="Password"
-                                                    type="password"
-                                                    variant="outlined"
-                                                    id="password"
-                                                    onChange={handleChange}
-                                                    value={values.password} />
+                                            <TextField
+                                                className="w-100 mt-3"
+                                                placeholder="password"
+                                                label="Password"
+                                                type="password"
+                                                variant="outlined"
+                                                id="password"
+                                                onChange={handleChange}
+                                                value={values.password} />
 
-                                                <Button color="error"
-                                                    variant="contained"
-                                                    className="w-50 mt-3"
-                                                    type="submit">
-                                                    submit
-                                                </Button>
-                                            </form>
-                                            )}
-                                            </Formik>
-                                    
+                                            <Button color="error"
+                                                variant="contained"
+                                                className="w-50 mt-3"
+                                                type="submit">
+                                                submit
+                                            </Button>
+                                        </form>
+                                    )}
+                                </Formik>
 
 
-                                        </CardContent>
+
+                             </CardContent>
                         </Card>
                     </Grid>
                 </Grid>
@@ -134,7 +137,7 @@ const TeacherSignup = () => {
 
         </div>
     )
-    
+
 }
 
 export default TeacherSignup

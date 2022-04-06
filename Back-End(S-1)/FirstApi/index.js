@@ -12,17 +12,15 @@ app.use(express.json())
 
 app.use(cors({
     origin : ['http://localhost:3000']
-
 }))
 
 app.use("/teacher",teacherRouter)
-app.use("/addnew",assignmentRouter)
+app.use("/assignment",assignmentRouter)
 
 
 app.get('/',(req,res)=>{
     res.send("you got a response")
 })
-
 
 app.listen(port,()=>{
     console.log("my mini server is started");

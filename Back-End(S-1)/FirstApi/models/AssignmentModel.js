@@ -1,4 +1,4 @@
-const mongoose = require("../connection")
+ const mongoose = require("../connection")
 
 const mySchema = new mongoose.Schema({
     
@@ -11,5 +11,5 @@ const mySchema = new mongoose.Schema({
     submissionDate:Date
 })
 
-const assignmentModel = mongoose.model("assignments",mySchema);
+const assignmentModel = mongoose.model("assignment",mySchema);
 module.exports=assignmentModel;
