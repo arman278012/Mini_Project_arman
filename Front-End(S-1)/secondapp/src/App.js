@@ -29,7 +29,7 @@ function App() {
         <Route element={<AddNew></AddNew>} path="/addnew"></Route>
         <Route element={<AboutUs></AboutUs>} path="/about"></Route>
         <Route element={<ListBatches></ListBatches>} path="/listbatch"></Route>
-        <Route element={<Accord></Accord>} path="/accord"></Route>
+        {/* <Route element={<Accord></Accord>} path="/accord"></Route> */}
       </Routes> 
         </BrowserRouter>
       
