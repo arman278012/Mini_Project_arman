@@ -7,6 +7,7 @@ const mySchema = new mongoose.Schema({
   batch: String,
   instructions: String,
   file: String,
+  subject: String,
   createdAt: { type: Date, default: new Date() },
   submissionDate: Date,
 });
