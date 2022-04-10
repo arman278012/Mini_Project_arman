@@ -1,21 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './Components/header';
-import {BrowserRouter,Route,Routes} from 'react-router-dom';
-import Gallery from './Components/gallery';
-import Login from './Components/studentslogin';
-import Photo from './Components/photo';
-import TeacherLogin from './Components/teacherslogin';
-import TeacherSignup from './Components/techerSignup';
-import BatchDashboard from './Components/batchDashboard';
-import AddNew from './Components/AddNewAssignment';
-import AboutUs from './Components/aboutus';
-import ListBatches from './Components/listBatches';
-import Accord from './Components/accordion';
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./Components/header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Gallery from "./Components/gallery";
+import Login from "./Components/studentslogin";
+import Photo from "./Components/photo";
+import TeacherLogin from "./Components/teacherslogin";
+import TeacherSignup from "./Components/techerSignup";
+import BatchDashboard from "./Components/batchDashboard";
+import AddNew from "./Components/AddNewAssignment";
+import AboutUs from "./Components/aboutus";
+import ListBatches from "./Components/listBatches";
+import Accord from "./Components/accordion";
+import ShowAssignment from "./Components/showassignment";
 function App() {
   return (
     <div>
-      
       <BrowserRouter>
       <Home></Home>
       <Routes>
@@ -29,6 +29,9 @@ function App() {
         <Route element={<AddNew></AddNew>} path="/addnew"></Route>
         <Route element={<AboutUs></AboutUs>} path="/about"></Route>
         <Route element={<ListBatches></ListBatches>} path="/listbatch"></Route>
+        <Route element={<ShowAssignment></ShowAssignment>} path="/showassignment"></Route>
+
+
         {/* <Route element={<Accord></Accord>} path="/accord"></Route> */}
       </Routes> 
         </BrowserRouter>

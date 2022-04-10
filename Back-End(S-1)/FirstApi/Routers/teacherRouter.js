@@ -27,20 +27,16 @@ router.get("/getall", (req, res) => {
     });
 });
 
-
-
 router.post("/checklogin", (req, res) => {
-
   let formdata = req.body;
+  console.log(formdata);
 
   Model.findOne({ username: formdata.username })
     .then((data) => {
       if (data) {
-        console.log("data found");
-
         if (data.password === formdata.password) {
           console.log("login successfull");
-          res.status(200).json({status:"success"});
+          res.status(200).json(data);
         } else {
           console.log("password not matched");
           res.status(300).json({ status: "fail" });
@@ -53,24 +49,11 @@ router.post("/checklogin", (req, res) => {
     .catch((err) => {
       console.error(err);
       res.status(500).json(err);
-    }); 
+    });
 });
 
 // for exporting router
 module.exports = router;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const router = require ("express").Router()
 // const Model = require("../models/teacherModel")
