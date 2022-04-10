@@ -70,12 +70,12 @@ const Home = () => {
                   <NavLink className="nav-link active" aria-current="page" to="/addnew">Add-Assinments</NavLink>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink className="nav-link active" aria-current="page" to="/listbatch">Show Assignments</NavLink>
-                </li>
+                </li> */}
 
                 <li className="nav-item">
-                  <NavLink className="nav-link active" aria-current="page" to="/accord">Accord</NavLink>
+                  <NavLink className="nav-link active" aria-current="page" to="/showassignment">Show assignments</NavLink>
                 </li>
 
 
@@ -91,6 +91,6 @@ const Home = () => {
   )}
 
 export default Home;
-{/* export default function SimpleAccordion() */}
+
 
  

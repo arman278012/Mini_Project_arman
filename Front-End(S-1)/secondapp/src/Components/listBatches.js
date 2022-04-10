@@ -34,17 +34,18 @@ const ListBatches = () => {
     if (!loading) {
       return productArray.map((teacher) => (
         <div>
-          <Accordion>
+          <Accordion className="mt-5">
             <AccordionSummary>
-              <h5>Teacher Name :</h5>
+              <h4>Teacher Name :</h4>
               <h4>{teacher.teacherName}</h4>
+              {/* <h4>{teacher.title}</h4> */}
             </AccordionSummary>
             <AccordionDetails>
               <Grid container>
                 <Grid item md={6}>
                   <ul class="list-group">
-                    <li class="list-group-item">Subject::{teacher.subject}</li>
-                    <li class="list-group-item">branch::{teacher.branch}</li>
+                    <li class="list-group-item">Subject::{teacher.name}</li>
+                    <li class="list-group-item">branch::{teacher.subject}</li>
                   </ul>
                 </Grid>
               </Grid>
