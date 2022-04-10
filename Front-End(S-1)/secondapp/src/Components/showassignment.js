@@ -11,8 +11,8 @@ const ShowAssignment = () => {
       };
 
 
-    //   const showAssign = (values) => {
-    //     console.log(values);
+      const showAssign = (values) => {
+        console.log(values);
         
     //   fetch(url + "/showassignment/checklogin", {
     //     method: "POST",
@@ -35,7 +35,7 @@ const ShowAssignment = () => {
     //       });
     //     }
     //   });
-    // }
+    }
 
 
 
